@@ -200,7 +200,9 @@ namespace EQSpellParser
             Func<string[], int, Spell> parser = ParseSpellCurrent;
 
             // spells_us.txt field layout has changed over time - pick the best parser
-            if (fields.Length > 220)
+            if (fields.Length == 237)
+                parser = ParseSpellTHJ;
+            if (fields.Length != 237 && fields.Length > 220)
                 parser = ParseSpell20160210;
             if (fields.Length == 179 && version < 20160413)
                 parser = ParseSpell20160413;

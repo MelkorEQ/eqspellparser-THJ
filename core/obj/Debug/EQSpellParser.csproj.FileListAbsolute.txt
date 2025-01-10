@@ -1,0 +1,7 @@
+C:\Mine\Code\eqspellparser-master\core\bin\Debug\EQSpellParser.dll
+C:\Mine\Code\eqspellparser-master\core\bin\Debug\EQSpellParser.pdb
+C:\Mine\Code\eqspellparser-master\core\bin\Debug\lzma.dll
+C:\Mine\Code\eqspellparser-master\core\obj\Debug\EQSpellParser.csproj.CoreCompileInputs.cache
+C:\Mine\Code\eqspellparser-master\core\obj\Debug\EQSpellParser.csproj.CopyComplete
+C:\Mine\Code\eqspellparser-master\core\obj\Debug\EQSpellParser.dll
+C:\Mine\Code\eqspellparser-master\core\obj\Debug\EQSpellParser.pdb

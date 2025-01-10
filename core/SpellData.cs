@@ -556,6 +556,8 @@ namespace EQSpellParser
                     if (base2 != 0)
                         return String.Format("Decrease Detrimental Duration by 50% ({0}% Chance)", base1 / 10) + absmax;
                     return String.Format("Dispel Detrimental ({0}% Chance)", base1 / 10) + absmax;
+                case 155:
+                    return Spell.FormatPercent("Additional Spell Critical Damage", base1);
                 case 156:
                     return "Illusion: Target";
                 case 157:
@@ -610,7 +612,7 @@ namespace EQSpellParser
                     if (Version != 0 && Version < 20160816)
                         return String.Format("Lifetap from Weapon Damage: {0}%", base1);
                     // this is to Melee + Skill Attacks (kick/bash/etc) that 457 is to Spells
-                    return string.Format("Return {0}% of Melee Damage as {1}", base1 / 10f, new[] { "HP", "Mana", "Endurance" }[base2 % 3]) + (max > 0 ? String.Format(", Max Per Hit: {0}", max) : "");
+                    return string.Format("Return {0}% of Melee Damage as {1}", base1, ((base2 != -1 ) ? new[] { "HP", "Mana", "Endurance" }[base2 % 3] : "All" )) + (max > 0 ? String.Format(", Max Per Hit: {0}", max) : "");
                 case 179:
                     return String.Format("Instrument Modifier: {0} {1}", Skill, value);
                 case 180:
